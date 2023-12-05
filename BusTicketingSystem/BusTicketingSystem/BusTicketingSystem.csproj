@@ -114,6 +114,12 @@
     <Compile Include="Stations.Designer.cs">
       <DependentUpon>Stations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket.Designer.cs">
+      <DependentUpon>Ticket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trips.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Stations.resx">
       <DependentUpon>Stations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket.resx">
+      <DependentUpon>Ticket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Trips.resx">
       <DependentUpon>Trips.cs</DependentUpon>

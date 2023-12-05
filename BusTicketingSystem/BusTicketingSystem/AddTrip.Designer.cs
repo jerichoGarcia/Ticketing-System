@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTrip));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnupExit = new System.Windows.Forms.Button();
-            this.btnupMinimize = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,56 +45,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.btnupExit = new System.Windows.Forms.Button();
+            this.btnupMinimize = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel1.Controls.Add(this.btnupExit);
-            this.panel1.Controls.Add(this.btnupMinimize);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 30);
-            this.panel1.TabIndex = 45;
-            // 
-            // btnupExit
-            // 
-            this.btnupExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnupExit.FlatAppearance.BorderSize = 0;
-            this.btnupExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnupExit.Image = ((System.Drawing.Image)(resources.GetObject("btnupExit.Image")));
-            this.btnupExit.Location = new System.Drawing.Point(440, 3);
-            this.btnupExit.Name = "btnupExit";
-            this.btnupExit.Size = new System.Drawing.Size(24, 23);
-            this.btnupExit.TabIndex = 4;
-            this.btnupExit.UseVisualStyleBackColor = true;
-            // 
-            // btnupMinimize
-            // 
-            this.btnupMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnupMinimize.FlatAppearance.BorderSize = 0;
-            this.btnupMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnupMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnupMinimize.Image")));
-            this.btnupMinimize.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnupMinimize.Location = new System.Drawing.Point(408, 5);
-            this.btnupMinimize.Name = "btnupMinimize";
-            this.btnupMinimize.Size = new System.Drawing.Size(34, 21);
-            this.btnupMinimize.TabIndex = 6;
-            this.btnupMinimize.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bodoni MT", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Add Trip";
             // 
             // textBox4
             // 
@@ -268,16 +218,56 @@
             this.label8.TabIndex = 60;
             this.label8.Text = "Fare* :";
             // 
+            // btnupExit
+            // 
+            this.btnupExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnupExit.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnupExit.FlatAppearance.BorderSize = 0;
+            this.btnupExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnupExit.Image = ((System.Drawing.Image)(resources.GetObject("btnupExit.Image")));
+            this.btnupExit.Location = new System.Drawing.Point(442, 0);
+            this.btnupExit.Name = "btnupExit";
+            this.btnupExit.Size = new System.Drawing.Size(24, 23);
+            this.btnupExit.TabIndex = 63;
+            this.btnupExit.UseVisualStyleBackColor = false;
+            // 
+            // btnupMinimize
+            // 
+            this.btnupMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnupMinimize.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnupMinimize.FlatAppearance.BorderSize = 0;
+            this.btnupMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnupMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnupMinimize.Image")));
+            this.btnupMinimize.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnupMinimize.Location = new System.Drawing.Point(410, 2);
+            this.btnupMinimize.Name = "btnupMinimize";
+            this.btnupMinimize.Size = new System.Drawing.Size(34, 21);
+            this.btnupMinimize.TabIndex = 64;
+            this.btnupMinimize.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label1.Font = new System.Drawing.Font("Bodoni MT", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(-2, -2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(478, 25);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Add Trip";
+            // 
             // AddTrip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(469, 605);
+            this.Controls.Add(this.btnupExit);
+            this.Controls.Add(this.btnupMinimize);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label6);
@@ -293,19 +283,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddTrip";
             this.Text = "AddTrip";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnupExit;
-        private System.Windows.Forms.Button btnupMinimize;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
@@ -322,5 +305,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnupExit;
+        private System.Windows.Forms.Button btnupMinimize;
+        private System.Windows.Forms.Label label1;
     }
 }
