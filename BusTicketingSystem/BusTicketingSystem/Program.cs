@@ -16,7 +16,7 @@ namespace BusTicketingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ticket());
+            Application.Run(new Dashboard());
         }
     }
 }

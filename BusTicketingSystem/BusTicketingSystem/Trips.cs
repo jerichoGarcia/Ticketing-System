@@ -12,9 +12,16 @@ namespace BusTicketingSystem
 {
     public partial class Trips : Form
     {
+        
         public Trips()
         {
             InitializeComponent();
+            
+        }
+
+        private void btnAddTrips_Click(object sender, EventArgs e)
+        {
+            new AddTrip().ShowDialog();
         }
     }
 }

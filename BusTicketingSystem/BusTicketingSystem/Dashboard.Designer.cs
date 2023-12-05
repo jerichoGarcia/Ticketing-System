@@ -50,7 +50,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Controls.Add(this.btnMaximize);
             this.panel1.Controls.Add(this.btnExit);
@@ -135,7 +135,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 50);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(238, 642);
+            this.panel2.Size = new System.Drawing.Size(232, 642);
             this.panel2.TabIndex = 1;
             // 
             // btnSettings
@@ -173,6 +173,7 @@
             this.btnStation.Text = "  Stations";
             this.btnStation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStation.UseVisualStyleBackColor = true;
+            this.btnStation.Click += new System.EventHandler(this.btnStation_Click);
             // 
             // btnDrivers
             // 
@@ -191,6 +192,7 @@
             this.btnDrivers.Text = "  Drivers";
             this.btnDrivers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDrivers.UseVisualStyleBackColor = true;
+            this.btnDrivers.Click += new System.EventHandler(this.btnDrivers_Click);
             // 
             // btnBusses
             // 
@@ -209,6 +211,7 @@
             this.btnBusses.Text = "  Busses";
             this.btnBusses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBusses.UseVisualStyleBackColor = true;
+            this.btnBusses.Click += new System.EventHandler(this.btnBusses_Click);
             // 
             // btnPassengers
             // 
@@ -219,14 +222,15 @@
             this.btnPassengers.ForeColor = System.Drawing.Color.White;
             this.btnPassengers.Image = ((System.Drawing.Image)(resources.GetObject("btnPassengers.Image")));
             this.btnPassengers.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPassengers.Location = new System.Drawing.Point(24, 243);
+            this.btnPassengers.Location = new System.Drawing.Point(15, 243);
             this.btnPassengers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPassengers.Name = "btnPassengers";
             this.btnPassengers.Size = new System.Drawing.Size(210, 79);
             this.btnPassengers.TabIndex = 4;
-            this.btnPassengers.Text = "   Passengers";
+            this.btnPassengers.Text = " Passengers";
             this.btnPassengers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPassengers.UseVisualStyleBackColor = true;
+            this.btnPassengers.Click += new System.EventHandler(this.btnPassengers_Click);
             // 
             // btnTrips
             // 
@@ -245,7 +249,7 @@
             this.btnTrips.Text = "  Trips";
             this.btnTrips.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrips.UseVisualStyleBackColor = true;
-            this.btnTrips.Click += new System.EventHandler(this.btnHome_Click);
+            this.btnTrips.Click += new System.EventHandler(this.btnTrips_Click);
             // 
             // pictureBox2
             // 
@@ -261,10 +265,10 @@
             // MainPanel
             // 
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MainPanel.Location = new System.Drawing.Point(242, 50);
+            this.MainPanel.Location = new System.Drawing.Point(227, 50);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(958, 642);
+            this.MainPanel.Size = new System.Drawing.Size(973, 642);
             this.MainPanel.TabIndex = 2;
             // 
             // Dashboard
@@ -280,6 +284,7 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
