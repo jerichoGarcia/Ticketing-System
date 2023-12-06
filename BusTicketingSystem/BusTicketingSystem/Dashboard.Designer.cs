@@ -43,6 +43,7 @@
             this.btnTrips = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -50,7 +51,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(213)))), ((int)(((byte)(219)))));
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Controls.Add(this.btnMaximize);
             this.panel1.Controls.Add(this.btnExit);
@@ -117,13 +118,14 @@
             this.label1.Location = new System.Drawing.Point(13, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 34);
+            this.label1.Size = new System.Drawing.Size(158, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ticketing System";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(220)))), ((int)(((byte)(240)))));
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btnSettings);
             this.panel2.Controls.Add(this.btnStation);
             this.panel2.Controls.Add(this.btnDrivers);
@@ -241,7 +243,7 @@
             this.btnTrips.ForeColor = System.Drawing.Color.White;
             this.btnTrips.Image = ((System.Drawing.Image)(resources.GetObject("btnTrips.Image")));
             this.btnTrips.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTrips.Location = new System.Drawing.Point(10, 166);
+            this.btnTrips.Location = new System.Drawing.Point(10, 167);
             this.btnTrips.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTrips.Name = "btnTrips";
             this.btnTrips.Size = new System.Drawing.Size(186, 77);
@@ -254,7 +256,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(23, 14);
+            this.pictureBox2.Location = new System.Drawing.Point(23, 3);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(188, 128);
@@ -270,6 +272,17 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(973, 642);
             this.MainPanel.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(70)))), ((int)(((byte)(110)))));
+            this.label2.Location = new System.Drawing.Point(23, 136);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(190, 26);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "SubUrb Transit";
             // 
             // Dashboard
             // 
@@ -288,6 +301,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -309,6 +323,7 @@
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label2;
     }
 }
 

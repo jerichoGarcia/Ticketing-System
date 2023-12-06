@@ -71,7 +71,6 @@
             this.dgvStations.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvStations.EnableHeadersVisualStyles = false;
             this.dgvStations.Location = new System.Drawing.Point(0, 0);
-            this.dgvStations.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvStations.Name = "dgvStations";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -84,7 +83,7 @@
             this.dgvStations.RowHeadersVisible = false;
             this.dgvStations.RowHeadersWidth = 62;
             this.dgvStations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStations.Size = new System.Drawing.Size(1200, 631);
+            this.dgvStations.Size = new System.Drawing.Size(800, 410);
             this.dgvStations.TabIndex = 22;
             // 
             // Column1
@@ -124,15 +123,16 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(220)))), ((int)(((byte)(240)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtSearchStation);
             this.panel1.Controls.Add(this.btnSearchStations);
             this.panel1.Controls.Add(this.btnAddStations);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 61);
+            this.panel1.Size = new System.Drawing.Size(800, 40);
             this.panel1.TabIndex = 25;
             // 
             // label1
@@ -140,9 +140,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bodoni MT", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 39);
+            this.label1.Size = new System.Drawing.Size(95, 26);
             this.label1.TabIndex = 23;
             this.label1.Text = "Stations";
             // 
@@ -152,9 +153,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchStation.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchStation.Location = new System.Drawing.Point(827, 12);
+            this.txtSearchStation.Location = new System.Drawing.Point(551, 8);
+            this.txtSearchStation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearchStation.Name = "txtSearchStation";
-            this.txtSearchStation.Size = new System.Drawing.Size(233, 35);
+            this.txtSearchStation.Size = new System.Drawing.Size(157, 26);
             this.txtSearchStation.TabIndex = 22;
             // 
             // btnSearchStations
@@ -164,9 +166,10 @@
             this.btnSearchStations.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSearchStations.FlatAppearance.BorderSize = 0;
             this.btnSearchStations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchStations.Location = new System.Drawing.Point(1066, 0);
+            this.btnSearchStations.Location = new System.Drawing.Point(711, 0);
+            this.btnSearchStations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearchStations.Name = "btnSearchStations";
-            this.btnSearchStations.Size = new System.Drawing.Size(59, 61);
+            this.btnSearchStations.Size = new System.Drawing.Size(39, 40);
             this.btnSearchStations.TabIndex = 21;
             this.btnSearchStations.UseVisualStyleBackColor = true;
             // 
@@ -177,9 +180,10 @@
             this.btnAddStations.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAddStations.FlatAppearance.BorderSize = 0;
             this.btnAddStations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddStations.Location = new System.Drawing.Point(1125, 0);
+            this.btnAddStations.Location = new System.Drawing.Point(750, 0);
+            this.btnAddStations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddStations.Name = "btnAddStations";
-            this.btnAddStations.Size = new System.Drawing.Size(75, 61);
+            this.btnAddStations.Size = new System.Drawing.Size(50, 40);
             this.btnAddStations.TabIndex = 2;
             this.btnAddStations.UseVisualStyleBackColor = true;
             this.btnAddStations.Click += new System.EventHandler(this.btnAddStations_Click);
@@ -188,20 +192,20 @@
             // 
             this.panel2.Controls.Add(this.dgvStations);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 61);
+            this.panel2.Location = new System.Drawing.Point(0, 40);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1200, 631);
+            this.panel2.Size = new System.Drawing.Size(800, 410);
             this.panel2.TabIndex = 26;
             // 
             // Stations
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Stations";
             this.Text = "Stations";
             ((System.ComponentModel.ISupportInitialize)(this.dgvStations)).EndInit();

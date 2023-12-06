@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Passengers));
             this.dgvPassengers = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,14 +56,14 @@
             this.dgvPassengers.BackgroundColor = System.Drawing.Color.White;
             this.dgvPassengers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPassengers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPassengers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SkyBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPassengers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPassengers.ColumnHeadersHeight = 40;
             this.dgvPassengers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvPassengers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -77,20 +77,19 @@
             this.dgvPassengers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPassengers.EnableHeadersVisualStyles = false;
             this.dgvPassengers.Location = new System.Drawing.Point(0, 0);
-            this.dgvPassengers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvPassengers.Name = "dgvPassengers";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPassengers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPassengers.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPassengers.RowHeadersVisible = false;
             this.dgvPassengers.RowHeadersWidth = 62;
             this.dgvPassengers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPassengers.Size = new System.Drawing.Size(1200, 631);
+            this.dgvPassengers.Size = new System.Drawing.Size(800, 410);
             this.dgvPassengers.TabIndex = 20;
             // 
             // Column1
@@ -151,15 +150,16 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(220)))), ((int)(((byte)(240)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtSearchPassengers);
             this.panel1.Controls.Add(this.btnSearchPassengers);
             this.panel1.Controls.Add(this.btnAddPassengers);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 61);
+            this.panel1.Size = new System.Drawing.Size(800, 40);
             this.panel1.TabIndex = 21;
             // 
             // label1
@@ -167,9 +167,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bodoni MT", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 39);
+            this.label1.Size = new System.Drawing.Size(124, 26);
             this.label1.TabIndex = 23;
             this.label1.Text = "Passengers";
             // 
@@ -179,9 +180,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchPassengers.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchPassengers.Location = new System.Drawing.Point(818, 12);
+            this.txtSearchPassengers.Location = new System.Drawing.Point(545, 8);
+            this.txtSearchPassengers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearchPassengers.Name = "txtSearchPassengers";
-            this.txtSearchPassengers.Size = new System.Drawing.Size(242, 35);
+            this.txtSearchPassengers.Size = new System.Drawing.Size(163, 26);
             this.txtSearchPassengers.TabIndex = 22;
             this.txtSearchPassengers.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -192,9 +194,10 @@
             this.btnSearchPassengers.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSearchPassengers.FlatAppearance.BorderSize = 0;
             this.btnSearchPassengers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchPassengers.Location = new System.Drawing.Point(1066, 0);
+            this.btnSearchPassengers.Location = new System.Drawing.Point(711, 0);
+            this.btnSearchPassengers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearchPassengers.Name = "btnSearchPassengers";
-            this.btnSearchPassengers.Size = new System.Drawing.Size(59, 61);
+            this.btnSearchPassengers.Size = new System.Drawing.Size(39, 40);
             this.btnSearchPassengers.TabIndex = 21;
             this.btnSearchPassengers.UseVisualStyleBackColor = true;
             // 
@@ -205,9 +208,10 @@
             this.btnAddPassengers.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAddPassengers.FlatAppearance.BorderSize = 0;
             this.btnAddPassengers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddPassengers.Location = new System.Drawing.Point(1125, 0);
+            this.btnAddPassengers.Location = new System.Drawing.Point(750, 0);
+            this.btnAddPassengers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddPassengers.Name = "btnAddPassengers";
-            this.btnAddPassengers.Size = new System.Drawing.Size(75, 61);
+            this.btnAddPassengers.Size = new System.Drawing.Size(50, 40);
             this.btnAddPassengers.TabIndex = 2;
             this.btnAddPassengers.UseVisualStyleBackColor = true;
             this.btnAddPassengers.Click += new System.EventHandler(this.btnAddPassengers_Click);
@@ -216,20 +220,20 @@
             // 
             this.panel2.Controls.Add(this.dgvPassengers);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 61);
+            this.panel2.Location = new System.Drawing.Point(0, 40);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1200, 631);
+            this.panel2.Size = new System.Drawing.Size(800, 410);
             this.panel2.TabIndex = 22;
             // 
             // Passengers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Passengers";
             this.Text = "Passengers";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPassengers)).EndInit();

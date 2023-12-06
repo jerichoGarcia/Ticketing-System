@@ -45,7 +45,7 @@
             // btnupExit
             // 
             this.btnupExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnupExit.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnupExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(204)))), ((int)(((byte)(187)))));
             this.btnupExit.FlatAppearance.BorderSize = 0;
             this.btnupExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnupExit.Image = ((System.Drawing.Image)(resources.GetObject("btnupExit.Image")));
@@ -58,7 +58,7 @@
             // btnupMinimize
             // 
             this.btnupMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnupMinimize.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnupMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(204)))), ((int)(((byte)(187)))));
             this.btnupMinimize.FlatAppearance.BorderSize = 0;
             this.btnupMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnupMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnupMinimize.Image")));
@@ -71,9 +71,9 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(204)))), ((int)(((byte)(187)))));
             this.label1.Font = new System.Drawing.Font("Bodoni MT", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(478, 25);

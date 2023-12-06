@@ -81,7 +81,6 @@
             this.dgvDrivers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDrivers.EnableHeadersVisualStyles = false;
             this.dgvDrivers.Location = new System.Drawing.Point(0, 0);
-            this.dgvDrivers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDrivers.Name = "dgvDrivers";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -94,7 +93,7 @@
             this.dgvDrivers.RowHeadersVisible = false;
             this.dgvDrivers.RowHeadersWidth = 62;
             this.dgvDrivers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDrivers.Size = new System.Drawing.Size(1200, 631);
+            this.dgvDrivers.Size = new System.Drawing.Size(800, 410);
             this.dgvDrivers.TabIndex = 22;
             // 
             // Column1
@@ -175,15 +174,16 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(220)))), ((int)(((byte)(240)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtSearchDrivers);
             this.panel1.Controls.Add(this.btnSearchDrivers);
             this.panel1.Controls.Add(this.btnAddDrivers);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1200, 61);
+            this.panel1.Size = new System.Drawing.Size(800, 40);
             this.panel1.TabIndex = 24;
             // 
             // label1
@@ -191,9 +191,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bodoni MT", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 39);
+            this.label1.Size = new System.Drawing.Size(91, 26);
             this.label1.TabIndex = 23;
             this.label1.Text = "Drivers";
             // 
@@ -203,9 +204,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchDrivers.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchDrivers.Location = new System.Drawing.Point(827, 12);
+            this.txtSearchDrivers.Location = new System.Drawing.Point(551, 8);
+            this.txtSearchDrivers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearchDrivers.Name = "txtSearchDrivers";
-            this.txtSearchDrivers.Size = new System.Drawing.Size(233, 35);
+            this.txtSearchDrivers.Size = new System.Drawing.Size(157, 26);
             this.txtSearchDrivers.TabIndex = 22;
             // 
             // btnSearchDrivers
@@ -215,9 +217,10 @@
             this.btnSearchDrivers.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSearchDrivers.FlatAppearance.BorderSize = 0;
             this.btnSearchDrivers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchDrivers.Location = new System.Drawing.Point(1066, 0);
+            this.btnSearchDrivers.Location = new System.Drawing.Point(711, 0);
+            this.btnSearchDrivers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearchDrivers.Name = "btnSearchDrivers";
-            this.btnSearchDrivers.Size = new System.Drawing.Size(59, 61);
+            this.btnSearchDrivers.Size = new System.Drawing.Size(39, 40);
             this.btnSearchDrivers.TabIndex = 21;
             this.btnSearchDrivers.UseVisualStyleBackColor = true;
             // 
@@ -228,9 +231,10 @@
             this.btnAddDrivers.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAddDrivers.FlatAppearance.BorderSize = 0;
             this.btnAddDrivers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddDrivers.Location = new System.Drawing.Point(1125, 0);
+            this.btnAddDrivers.Location = new System.Drawing.Point(750, 0);
+            this.btnAddDrivers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddDrivers.Name = "btnAddDrivers";
-            this.btnAddDrivers.Size = new System.Drawing.Size(75, 61);
+            this.btnAddDrivers.Size = new System.Drawing.Size(50, 40);
             this.btnAddDrivers.TabIndex = 2;
             this.btnAddDrivers.UseVisualStyleBackColor = true;
             this.btnAddDrivers.Click += new System.EventHandler(this.btnAddDrivers_Click);
@@ -239,20 +243,20 @@
             // 
             this.panel2.Controls.Add(this.dgvDrivers);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 61);
+            this.panel2.Location = new System.Drawing.Point(0, 40);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1200, 631);
+            this.panel2.Size = new System.Drawing.Size(800, 410);
             this.panel2.TabIndex = 25;
             // 
             // Drivers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Drivers";
             this.Text = "Drivers";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDrivers)).EndInit();
