@@ -24,7 +24,7 @@ namespace BusTicketingSystem
 
         private void btnAddPassengers_Click(object sender, EventArgs e)
         {
-            new AddPassenger().ShowDialog();
+            new AddTicket().ShowDialog();
         }
     }
 }

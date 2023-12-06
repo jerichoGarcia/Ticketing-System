@@ -284,6 +284,7 @@
             // AddTrip
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(704, 642);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox6);

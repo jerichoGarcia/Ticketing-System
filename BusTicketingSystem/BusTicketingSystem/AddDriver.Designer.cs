@@ -186,7 +186,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(468, 40);
             this.panel1.TabIndex = 64;
@@ -229,7 +229,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchTrips.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchTrips.Location = new System.Drawing.Point(545, 10);
-            this.txtSearchTrips.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearchTrips.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearchTrips.Name = "txtSearchTrips";
             this.txtSearchTrips.Size = new System.Drawing.Size(1, 26);
             this.txtSearchTrips.TabIndex = 2;
@@ -250,6 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(468, 499);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox4);
