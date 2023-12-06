@@ -16,5 +16,10 @@ namespace BusTicketingSystem
         {
             InitializeComponent();
         }
+
+        private void btnAddBusses_Click(object sender, EventArgs e)
+        {
+            new AddBus().ShowDialog();
+        }
     }
 }

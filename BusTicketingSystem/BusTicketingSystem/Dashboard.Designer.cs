@@ -35,6 +35,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnStation = new System.Windows.Forms.Button();
             this.btnDrivers = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.btnTrips = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -118,7 +118,7 @@
             this.label1.Location = new System.Drawing.Point(13, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 22);
+            this.label1.Size = new System.Drawing.Size(241, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ticketing System";
             // 
@@ -139,6 +139,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(232, 642);
             this.panel2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(70)))), ((int)(((byte)(110)))));
+            this.label2.Location = new System.Drawing.Point(23, 136);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(291, 42);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "SubUrb Transit";
             // 
             // btnSettings
             // 
@@ -229,7 +240,7 @@
             this.btnPassengers.Name = "btnPassengers";
             this.btnPassengers.Size = new System.Drawing.Size(210, 79);
             this.btnPassengers.TabIndex = 4;
-            this.btnPassengers.Text = " Passengers";
+            this.btnPassengers.Text = "Buy Ticket";
             this.btnPassengers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPassengers.UseVisualStyleBackColor = true;
             this.btnPassengers.Click += new System.EventHandler(this.btnPassengers_Click);
@@ -266,23 +277,14 @@
             // 
             // MainPanel
             // 
-            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MainPanel.Location = new System.Drawing.Point(227, 50);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(973, 642);
             this.MainPanel.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(70)))), ((int)(((byte)(110)))));
-            this.label2.Location = new System.Drawing.Point(23, 136);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 26);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "SubUrb Transit";
             // 
             // Dashboard
             // 

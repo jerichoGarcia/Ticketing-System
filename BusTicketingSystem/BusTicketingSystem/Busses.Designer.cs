@@ -75,6 +75,7 @@
             this.dgvBusses.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBusses.EnableHeadersVisualStyles = false;
             this.dgvBusses.Location = new System.Drawing.Point(0, 0);
+            this.dgvBusses.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvBusses.Name = "dgvBusses";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -87,7 +88,7 @@
             this.dgvBusses.RowHeadersVisible = false;
             this.dgvBusses.RowHeadersWidth = 62;
             this.dgvBusses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvBusses.Size = new System.Drawing.Size(800, 410);
+            this.dgvBusses.Size = new System.Drawing.Size(1200, 630);
             this.dgvBusses.TabIndex = 22;
             // 
             // Column1
@@ -150,9 +151,8 @@
             this.panel1.Controls.Add(this.btnAddBusses);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 40);
+            this.panel1.Size = new System.Drawing.Size(1200, 62);
             this.panel1.TabIndex = 23;
             // 
             // label1
@@ -160,10 +160,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bodoni MT", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 8);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 26);
+            this.label1.Size = new System.Drawing.Size(118, 39);
             this.label1.TabIndex = 23;
             this.label1.Text = "Busses";
             // 
@@ -173,10 +172,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchBusses.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchBusses.Location = new System.Drawing.Point(551, 8);
-            this.txtSearchBusses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearchBusses.Location = new System.Drawing.Point(826, 12);
             this.txtSearchBusses.Name = "txtSearchBusses";
-            this.txtSearchBusses.Size = new System.Drawing.Size(157, 26);
+            this.txtSearchBusses.Size = new System.Drawing.Size(234, 35);
             this.txtSearchBusses.TabIndex = 22;
             // 
             // btnSearchBusses
@@ -186,10 +184,9 @@
             this.btnSearchBusses.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSearchBusses.FlatAppearance.BorderSize = 0;
             this.btnSearchBusses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchBusses.Location = new System.Drawing.Point(711, 0);
-            this.btnSearchBusses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearchBusses.Location = new System.Drawing.Point(1067, 0);
             this.btnSearchBusses.Name = "btnSearchBusses";
-            this.btnSearchBusses.Size = new System.Drawing.Size(39, 40);
+            this.btnSearchBusses.Size = new System.Drawing.Size(58, 62);
             this.btnSearchBusses.TabIndex = 21;
             this.btnSearchBusses.UseVisualStyleBackColor = true;
             // 
@@ -200,31 +197,31 @@
             this.btnAddBusses.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnAddBusses.FlatAppearance.BorderSize = 0;
             this.btnAddBusses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddBusses.Location = new System.Drawing.Point(750, 0);
-            this.btnAddBusses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddBusses.Location = new System.Drawing.Point(1125, 0);
             this.btnAddBusses.Name = "btnAddBusses";
-            this.btnAddBusses.Size = new System.Drawing.Size(50, 40);
+            this.btnAddBusses.Size = new System.Drawing.Size(75, 62);
             this.btnAddBusses.TabIndex = 2;
             this.btnAddBusses.UseVisualStyleBackColor = true;
+            this.btnAddBusses.Click += new System.EventHandler(this.btnAddBusses_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dgvBusses);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 40);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 62);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 410);
+            this.panel2.Size = new System.Drawing.Size(1200, 630);
             this.panel2.TabIndex = 24;
             // 
             // Busses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Busses";
             this.Text = "Busses";
             ((System.ComponentModel.ISupportInitialize)(this.dgvBusses)).EndInit();
