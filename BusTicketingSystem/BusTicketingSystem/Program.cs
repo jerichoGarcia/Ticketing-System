@@ -18,5 +18,17 @@ namespace BusTicketingSystem
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Dashboard());
         }
+
+
+    }
+
+    class dbConnection
+    {
+        public string connectDB()
+        {
+            string connection =@"Data Source=Jericho-Garcia;Initial Catalog=SubUrbTicketingDB;Integrated Security=True";
+
+            return connection;
+         }
     }
 }
