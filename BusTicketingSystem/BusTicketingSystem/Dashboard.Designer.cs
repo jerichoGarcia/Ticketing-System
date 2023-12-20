@@ -118,9 +118,9 @@
             this.label1.Location = new System.Drawing.Point(13, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 22);
+            this.label1.Size = new System.Drawing.Size(351, 34);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Ticketing System";
+            this.label1.Text = "SubUrb Ticketing System";
             // 
             // panel2
             // 
@@ -147,7 +147,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(70)))), ((int)(((byte)(110)))));
             this.label2.Location = new System.Drawing.Point(23, 136);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 26);
+            this.label2.Size = new System.Drawing.Size(291, 42);
             this.label2.TabIndex = 0;
             this.label2.Text = "SubUrb Transit";
             // 

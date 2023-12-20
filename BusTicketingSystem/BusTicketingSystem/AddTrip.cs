@@ -17,6 +17,11 @@ namespace BusTicketingSystem
             InitializeComponent();
         }
 
+
+        private void btnAddtrip_Click(object sender, EventArgs e)
+        {
+
+        } 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -25,6 +30,23 @@ namespace BusTicketingSystem
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
+        public void Clear()
+        {
+            txtBusType.Clear();
+            txtDate.Clear();
+            txtDeparture.Clear();
+            txtDestinationTo.Clear();
+            txtDestinationWhere.Clear();
+            txtFare.Clear();
+
+            txtBusType.Focus();
         }
     }
 }
