@@ -26,7 +26,7 @@ namespace BusTicketingSystem
     {
         public string connectDB()
         {
-            string connection =@"Data Source=Jericho-Garcia;Initial Catalog=SubUrbTicketingDB;Integrated Security=True";
+            string connection = @"Data Source=jericho-garcia;Initial Catalog=SubUrbTicketingDB;Integrated Security=True";
 
             return connection;
          }

@@ -114,6 +114,7 @@
     <Compile Include="Stations.Designer.cs">
       <DependentUpon>Stations.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubUrbQueryClass.cs" />
     <Compile Include="Ticket.cs">
       <SubType>Form</SubType>
     </Compile>

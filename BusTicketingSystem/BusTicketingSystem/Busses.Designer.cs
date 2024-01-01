@@ -90,6 +90,7 @@
             this.dgvBusses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBusses.Size = new System.Drawing.Size(1200, 630);
             this.dgvBusses.TabIndex = 22;
+            this.dgvBusses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBusses_CellContentClick);
             // 
             // Column1
             // 
@@ -233,7 +234,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dgvBusses;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewComboBoxColumn Column3;
@@ -246,5 +246,6 @@
         private System.Windows.Forms.Button btnSearchBusses;
         private System.Windows.Forms.Button btnAddBusses;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.DataGridView dgvBusses;
     }
 }

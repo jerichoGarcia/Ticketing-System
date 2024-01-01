@@ -12,14 +12,21 @@ namespace BusTicketingSystem
 {
     public partial class Busses : Form
     {
+        
         public Busses()
         {
             InitializeComponent();
+            //addBus.RefreshBusList();
         }
 
         private void btnAddBusses_Click(object sender, EventArgs e)
         {
             new AddBus().ShowDialog();
+        }
+
+        private void dgvBusses_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
