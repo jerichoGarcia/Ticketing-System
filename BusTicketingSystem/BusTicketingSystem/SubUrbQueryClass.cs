@@ -44,7 +44,7 @@ namespace BusTicketingSystem
         //addbus and view list
         public bool DisplayBusList()
         {
-            string ViewBusList = "SELECT * FROM tblBus ";
+            string ViewBusList = "SELECT BusType, PlateNo, BusNo, Capacity, AddedDate FROM tblBus ";
             SqlAdapter = new SqlDataAdapter(ViewBusList, sqlConnect);
             dataTable.Clear();
             SqlAdapter.Fill(dataTable);
@@ -52,9 +52,9 @@ namespace BusTicketingSystem
 
             return true;
         }
-        public bool addBus( string BusType, string PlateNo, int BusNo, int Capacity)
+        public bool addBus( string BusType, string PlateNo, int BusNo, int Capacity, DateTime dateTime)
         {
-            SqlCommand = new SqlCommand("INSERT INTO tblBus VALUES ( @BusType, @PlateNo, @BusNo, @Capacity)", sqlConnect);
+            SqlCommand = new SqlCommand("INSERT INTO tblBus VALUES ( @BusType, @PlateNo, @BusNo, @Capacity, @Date)", sqlConnect);
 
             //SqlCommand.Parameters.Add("@ID", SqlDbType.Int).Value = ID;
            // SqlCommand.Parameters.Add("@RegistrationID", SqlDbType.BigInt).Value = StudentID;
@@ -62,6 +62,7 @@ namespace BusTicketingSystem
             SqlCommand.Parameters.Add("@PlateNo", SqlDbType.VarChar).Value = PlateNo;
             SqlCommand.Parameters.Add("@BusNo", SqlDbType.Int).Value = BusNo;
             SqlCommand.Parameters.Add("@Capacity", SqlDbType.Int).Value = Capacity;
+            SqlCommand.Parameters.Add("@Date", SqlDbType.DateTime).Value = dateTime;
  
 
             sqlConnect.Open();
@@ -75,15 +76,15 @@ namespace BusTicketingSystem
         //addDriver and view list
         public bool DisplayDriverList()
         {
-            string ViewBusList = "SELECT * FROM tblDriver ";
-            SqlAdapter = new SqlDataAdapter(ViewBusList, sqlConnect);
+            string ViewDriverList = "SELECT * FROM tblDriver ";
+            SqlAdapter = new SqlDataAdapter(ViewDriverList, sqlConnect);
             dataTable.Clear();
             SqlAdapter.Fill(dataTable);
             bindingSource.DataSource = dataTable;
 
             return true;
         }
-        public bool addDriver (string DriverName, string Address, int ContactNo, int License)
+        public bool addDriver (string DriverName, string Address, long ContactNo, long License)
         {
             SqlCommand = new SqlCommand("INSERT INTO tblDriver VALUES ( @DriverName, @Address, @ContactNum, @License)", sqlConnect);
 
@@ -91,8 +92,8 @@ namespace BusTicketingSystem
             // SqlCommand.Parameters.Add("@RegistrationID", SqlDbType.BigInt).Value = StudentID;
             SqlCommand.Parameters.Add("@DriverName", SqlDbType.VarChar).Value = DriverName;
             SqlCommand.Parameters.Add("@Address", SqlDbType.VarChar).Value = Address;
-            SqlCommand.Parameters.Add("@ContactNum", SqlDbType.Int).Value = ContactNo;
-            SqlCommand.Parameters.Add("@License", SqlDbType.Int).Value = License;
+            SqlCommand.Parameters.Add("@ContactNum", SqlDbType.BigInt).Value = ContactNo;
+            SqlCommand.Parameters.Add("@License", SqlDbType.BigInt).Value = License;
 
 
             sqlConnect.Open();
@@ -102,5 +103,33 @@ namespace BusTicketingSystem
             return true;
         }
         //end of addDriver and viewlist
+
+        //staion and viewlist
+        public bool DisplayStationList()
+        {
+            string ViewStationList = "SELECT * FROM tblStation ";
+            SqlAdapter = new SqlDataAdapter(ViewStationList, sqlConnect);
+            dataTable.Clear();
+            SqlAdapter.Fill(dataTable);
+            bindingSource.DataSource = dataTable;
+
+            return true;
+        }
+        public bool addStation(string station)
+        {
+            SqlCommand = new SqlCommand("INSERT INTO tblStation VALUES ( @Station )", sqlConnect);
+
+            //SqlCommand.Parameters.Add("@ID", SqlDbType.Int).Value = ID;
+            // SqlCommand.Parameters.Add("@RegistrationID", SqlDbType.BigInt).Value = StudentID;
+            SqlCommand.Parameters.Add("@Station", SqlDbType.VarChar).Value = station;
+           
+
+
+            sqlConnect.Open();
+            SqlCommand.ExecuteNonQuery();
+            sqlConnect.Close();
+
+            return true;
+        }
     }
 }

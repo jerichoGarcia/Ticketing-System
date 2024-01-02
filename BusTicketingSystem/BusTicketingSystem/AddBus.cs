@@ -15,8 +15,9 @@ namespace BusTicketingSystem
         Busses Busses = new Busses();
 
         private SubUrbQueryClass SubUrbQuery;
-        private string BusType, PlateNo;
+        private string BusType, PlateNo, date;
         private int BusNo, Capacity;
+        
         public AddBus()
         {
             InitializeComponent();
@@ -32,15 +33,16 @@ namespace BusTicketingSystem
             PlateNo = txtPlateNo.Text;
             BusNo = Convert.ToInt32(txtBusNo.Text);
             Capacity = Convert.ToInt32(txtCapacity.Text);
-            SubUrbQuery.addBus(BusType, PlateNo, BusNo, Capacity);
+            date = dtpAddBus.Value.Date;
+            SubUrbQuery.addBus(BusType, PlateNo, BusNo, Capacity, datetime);
 
             MessageBox.Show("Successfully Added!", "Successful!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+            Clear();
         }
         public void RefreshBusList()
         {
             SubUrbQuery.DisplayBusList();
-            Busses.dgvBusses.DataSource = SubUrbQuery.bindingSource;
+            //Busses.dgvBusses.DataSource = SubUrbQuery.bindingSource;
         }
 
 
@@ -50,11 +52,23 @@ namespace BusTicketingSystem
             this.Close();
         }
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-       
+       public void Clear()
+        {
+            txtBusType.Clear();
+            txtCapacity.Clear();
+            txtBusNo.Clear();
+            txtPlateNo.Clear();
+            txtBusType.Focus();
+        }
     }
 }

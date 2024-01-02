@@ -44,7 +44,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtSearchTrips = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -195,7 +194,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(204)))), ((int)(((byte)(187)))));
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Controls.Add(this.btnExit);
-            this.panel1.Controls.Add(this.txtSearchTrips);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -235,17 +233,6 @@
             this.btnExit.TabIndex = 7;
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // txtSearchTrips
-            // 
-            this.txtSearchTrips.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchTrips.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchTrips.Location = new System.Drawing.Point(818, 15);
-            this.txtSearchTrips.Name = "txtSearchTrips";
-            this.txtSearchTrips.Size = new System.Drawing.Size(0, 35);
-            this.txtSearchTrips.TabIndex = 2;
             // 
             // label1
             // 
@@ -306,7 +293,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.TextBox txtSearchTrips;
         private System.Windows.Forms.Label label1;
     }
 }

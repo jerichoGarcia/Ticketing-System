@@ -12,10 +12,13 @@ namespace BusTicketingSystem
 {
     public partial class Busses : Form
     {
+        private SubUrbQueryClass SubUrbQuery;
         
         public Busses()
         {
             InitializeComponent();
+            //addBus.RefreshBusList();
+            //dgvBusses.DataSource = SubUrbQuery.bindingSource;
             //addBus.RefreshBusList();
         }
 
@@ -24,9 +27,9 @@ namespace BusTicketingSystem
             new AddBus().ShowDialog();
         }
 
-        private void dgvBusses_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Busses_Load(object sender, EventArgs e)
         {
-
+          
         }
     }
 }

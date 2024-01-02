@@ -17,7 +17,7 @@ namespace BusTicketingSystem
         private SubUrbQueryClass SubUrbQuery;
 
         public string DriverName, Address;
-        public int ContactNum, license;
+        public long ContactNum, license;
         public AddDriver()
         {
             InitializeComponent();
@@ -31,8 +31,8 @@ namespace BusTicketingSystem
         {
             DriverName = txtDriverName.Text;
             Address = txtAddress.Text;
-            ContactNum = Convert.ToInt32(txtContactNo.Text);
-            license = Convert.ToInt32(txtLicense.Text);
+            ContactNum = Convert.ToInt64(txtContactNo.Text);
+            license = Convert.ToInt64(txtLicense.Text);
             SubUrbQuery.addDriver(DriverName, Address, ContactNum, license);
 
             MessageBox.Show("Successfully Added!", "Successful!", MessageBoxButtons.OK, MessageBoxIcon.Information);
